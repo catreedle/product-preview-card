@@ -28,14 +28,10 @@
   </head>
   <body>
     <section class="hero">
-      <img
-        src="./images/image-product-mobile.jpg"
-        srcset="
-          ./images/image-product-mobile.jpg   480w,
-          ./images/image-product-desktop.jpg 1024w
-        "
-        alt="image-product"
-      />
+      <picture>
+        <source srcset="/images/image-product-desktop.jpg" media="(min-width: 37.5rem)">
+        <img src="/images/image-product-mobile.jpg" alt="image-product">
+      </picture>
     </section>
     <section class="product-info">
       <header class="content-header">
